@@ -1,0 +1,116 @@
+.wishlist-section {
+  padding: 50px 0;
+}
+
+.wishlist-title {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--heading-color, #333);
+}
+
+.wishlist-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-5px);
+}
+
+.wishlist-img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.wishlist-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-img img:hover {
+  transform: scale(1.1);
+}
+
+.wishlist-tour-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--heading-color, #333);
+}
+
+.wishlist-tour-desc {
+  color: var(--text-color, #666);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.wishlist-tour-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.wishlist-tour-details .price {
+  color: var(--secondary-color, #ee6e6e);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.wishlist-tour-details .package {
+  background: #f8f9fa;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.wishlist-actions .btn {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.wishlist-remove {
+  display: flex;
+  gap: 10px;
+}
+
+.wishlist-remove .btn {
+  flex: 1;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  background-color: rgb(244, 55, 55);
+ 
+}
+
+.wishlist-remove .btn:hover{
+ 
+  background-color: rgb(235, 18, 18);
+ 
+}
+
+.empty-wishlist {
+  padding: 50px 0;
+}
+
+.empty-wishlist h4 {
+  color: var(--heading-color, #333);
+  margin-bottom: 15px;
+}
+
+.empty-wishlist p {
+  color: var(--text-color, #666);
+  margin-bottom: 25px;
+}

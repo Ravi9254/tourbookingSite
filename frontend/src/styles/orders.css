@@ -1,0 +1,146 @@
+.orders-section {
+  padding: 50px 0;
+}
+
+.orders-title {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--heading-color, #333);
+}
+
+.order-card {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-info h5 {
+  color: var(--heading-color, #333);
+  margin-bottom: 5px;
+}
+
+.order-date {
+  color: var(--text-color, #666);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+.order-products h6 {
+  color: var(--heading-color, #333);
+  margin-bottom: 15px;
+}
+
+.order-product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.product-thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.product-details h6 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  color: var(--heading-color, #333);
+}
+
+.product-details p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-color, #666);
+}
+
+.product-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+.product-pricing .quantity {
+  font-size: 0.8rem;
+  color: var(--text-color, #666);
+}
+
+.product-pricing .price {
+  font-weight: 600;
+  color: var(--secondary-color, #ee6e6e);
+}
+
+.order-total {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #333;
+  text-align: right;
+}
+
+.order-total h5 {
+  color: var(--heading-color, #333);
+  margin: 0;
+}
+
+.empty-orders {
+  padding: 50px 0;
+}
+
+.empty-orders h4 {
+  color: var(--heading-color, #333);
+  margin-bottom: 15px;
+}
+
+.empty-orders p {
+  color: var(--text-color, #666);
+}
+
+@media screen and (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .product-info {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  
+  .order-product-item {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  
+  .product-pricing {
+    align-items: start;
+  }
+}

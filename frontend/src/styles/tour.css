@@ -1,0 +1,163 @@
+/* Tour Card Styles */
+.tour__card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  border: none;
+}
+
+.tour__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.tour__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tour__card:hover .tour__img {
+  transform: scale(1.1);
+}
+
+.tour__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--heading-color, #333);
+}
+
+.tour__description {
+  color: var(--text-color, #666);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tour__details {
+  margin-top: auto;
+}
+
+.tour__seats, .tour__package {
+  font-size: 0.9rem;
+  color: var(--text-color, #666);
+  margin-bottom: 5px;
+}
+
+.tour__price {
+  color: var(--secondary-color, #ee6e6e);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.no-image {
+  height: 200px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Pagination Styles */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination span {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  color: #333;
+  font-weight: 500;
+}
+
+.pagination span:hover {
+  background-color: var(--secondary-color, #ee6e6e);
+  color: white;
+  border-color: var(--secondary-color, #ee6e6e);
+}
+
+.pagination span.active__page {
+  background-color: var(--secondary-color, #ee6e6e);
+  color: white;
+  border-color: var(--secondary-color, #ee6e6e);
+}
+
+/* Success/Cancel Pages */
+.success-section, .cancel-section {
+  padding: 100px 0;
+}
+
+.success-content, .cancel-content {
+  padding: 50px 30px;
+}
+
+.success-title, .cancel-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.success-message, .cancel-message {
+  font-size: 1.1rem;
+  color: var(--text-color, #666);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.order-id {
+  font-weight: 600;
+  color: var(--secondary-color, #ee6e6e);
+  margin-bottom: 30px;
+}
+
+.success-actions, .cancel-actions {
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .tour__card {
+    margin-bottom: 20px;
+  }
+  
+  .pagination {
+    gap: 10px;
+  }
+  
+  .success-actions, .cancel-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .success-actions .btn, .cancel-actions .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tour__extra-details {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
